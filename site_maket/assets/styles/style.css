@@ -20,7 +20,7 @@ body{
     color: white;
     font-weight: 200;
     height: auto;
-    background-color: var(--main-bg-color);
+    background-color: #191919;
 }
 
 header {
@@ -292,6 +292,7 @@ span.green-color {
         background: #333;
     }
 }
+
 
 
 /* ------------------------------ END Media query ---------------------------- */
