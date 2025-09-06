@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url(_variables.css);
+@import url(icons.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.fnt-wei-3 {
+    font-weight: 300;
+}
+
+body{
+    font-family: "Lexend", sans-serif;
+    color: white;
+    font-weight: 200;
+    height: auto;
+    background-color: var(--main-bg-color);
+}
+
+header {
+    position: relative;
+}
+
+img.picture-bg {
+    width: 320px;
+    height: 307px;
+    position: absolute;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 8%;
+    right: 20px;
+    left: 20px;
+    width: calc(100%-40px);
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #262626;
+    background-color: #191919;
+    border-radius: 100px;
+    padding: 0 10px;
+    
+}
+
+.nav-bar span {
+    font-size: 22px;
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Меню */
+.dropdown-content {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background: #262626;
+    min-width: 160px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+
+}
+
+/* Список */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background: #333;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.message {
+    height: 50px;
+    width: 350px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    background-color: #262626;
+}
+
+.green-check {
+    margin-left: 22px;
+}
+
+.message span {
+    font-weight: 200;
+}
+
+.grid {
+    top: 27%;
+    display: grid;
+    margin: 0 25px;
+}
+
+.cell {
+    border: 1px solid white;
+    text-align: center;
+    
+}
+
+.cell h1 {
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.cell p {
+    line-height: 1.5;
+}
+
+.cell button {
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    background-color: #c6ff00;
+    margin: 30px auto 0;
+    display: block;
+}
+
+span.green-color {
+    color: #c6ff00;
+}
+
+
+
+/* ------------------------------ Media query ------------------------------- */
+
+@media (min-width: 902px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        height: 88px;
+        border-radius: 100px;
+    }
+
+    /* Лівий блок (логотип) */
+    .left-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Середина (навігація) */
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 8px 14px;
+        border-radius: 50px;
+    }
+
+    .nav-links a:hover {
+        background: #333;
+    }
+
+    /* Правий блок (Sign up / Login) */
+    .auth-buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .auth-buttons a {
+        padding: 8px 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .auth-buttons a.signup {
+        background: transparent;
+        color: white;
+    }
+
+    .auth-buttons a.login {
+        background: #c6ff00; /* твій неоновий зелений */
+        color: black;
+        font-weight: 600;
+    }
+
+    /* Ховаємо бургер-меню */
+    .btn-nav-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-links {
+        display: flex !important; /* меню показати */
+        gap: 30px;
+    }
+
+    .auth-buttons {
+        display: flex !important; /* кнопки показати */
+        gap: 15px;
+    }
+
+    .btn-nav-bar {
+        display: none !important; /* бургер сховати */
+    }
+
+    .dropdown-content {
+        display: none !important; /* випадаюче меню ховаємо */
+    }
+}
+
+@media (max-width: 901px) {
+    .nav-links,
+    .auth-buttons {
+        display: none; /* ховаємо посилання і кнопки */
+        position: absolute;
+        top: 0;
+        left: -200%; /* далеко за межами */
+        pointer-events: none; /* курсор не працює */
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .btn-nav-bar {
+        display: block; /* показуємо бургер */
+    }
+
+    .dropdown-content {
+        display: none; /* спочатку приховано */
+        position: absolute;
+        top: 100px;  /* під хедером */
+        right: 10px;
+        background: #262626;
+        min-width: 180px;
+        border-radius: 8px;
+        z-index: 1000;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+        flex-direction: column;
+    }
+
+    .dropdown-content.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .dropdown-content a {
+        padding: 12px 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background: #333;
+    }
+}
+
+
+/* ------------------------------ END Media query ---------------------------- */
