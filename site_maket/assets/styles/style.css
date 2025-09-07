@@ -7,19 +7,35 @@
     padding: 0;
 }
 
+.pos-rel {
+    position: relative;
+}
+
 .pos-abs {
     position: absolute;
 }
 
-.fnt-wei-3 {
-    font-weight: 300;
+.fnt-wei-4 {
+    font-weight: 400;
+}
+
+.fnt-sz-12 {
+    font-size: 12px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.over-hid {
+    overflow: hidden;
 }
 
 body{
     font-family: "Lexend", sans-serif;
     color: white;
     font-weight: 200;
-    height: auto;
+    height: 1500px;
     background-color: #191919;
 }
 
@@ -27,18 +43,23 @@ header {
     position: relative;
 }
 
+div img.picture-bg {
+    position: absolute;
+}
+
 img.picture-bg {
     width: 320px;
-    height: 307px;
+    height: 300px;
+    top: -240px;
     position: absolute;
 }
 
 .nav-bar {
     position: absolute;
     top: 8%;
-    right: 20px;
-    left: 20px;
-    width: calc(100%-40px);
+    right: 10px;
+    left: 10px;
+    /* width: calc(100% + 40px); */
     height: 88px;
     display: flex;
     align-items: center;
@@ -47,7 +68,6 @@ img.picture-bg {
     background-color: #191919;
     border-radius: 100px;
     padding: 0 10px;
-    
 }
 
 .nav-bar span {
@@ -77,7 +97,6 @@ img.picture-bg {
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-
 }
 
 /* Список */
@@ -94,6 +113,10 @@ img.picture-bg {
 .dropdown-content.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.hero-seaction {
+    margin-top: 240px;
 }
 
 .message {
@@ -116,15 +139,19 @@ img.picture-bg {
 }
 
 .grid {
+    width: 505px;
     top: 27%;
     display: grid;
     margin: 0 25px;
 }
 
+.gachok {
+    position: relative;
+}
+
 .cell {
-    border: 1px solid white;
     text-align: center;
-    
+    margin-bottom: 80px;   
 }
 
 .cell h1 {
@@ -146,12 +173,227 @@ img.picture-bg {
     font-family: "Lexend", sans-serif;
     font-size: 16px;
     background-color: #c6ff00;
-    margin: 30px auto 0;
+    margin: 30px auto 20px;
     display: block;
 }
 
 span.green-color {
     color: #c6ff00;
+}
+
+.cell-transactions {
+    position: relative;
+    width: 350px;
+    height: 520px;
+    border: 1px solid #282926;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #191919;
+    margin: 0 auto;
+}
+
+.cell-transactions .arrows img {
+  top: 300px;
+  right: -40px;
+}
+
+.fife-k {
+    width: 160px;
+    height: 70px;
+    padding: 0 10px;
+    position: absolute;
+    top: -115px;
+    left: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: #22251b;
+    z-index: 1;
+}
+
+div.arrows {
+    position: absolute;
+    top: -110px;
+    right: -100px;
+    z-index: -1;
+
+}
+
+img.arrows {
+    width: 300px;
+    height: 300px;
+}
+
+div.transactions {
+    margin: 60px 20px 0 20px;
+}
+
+div.transactions > p {
+    top: -40px;
+}
+
+.transactions {
+  position: relative;
+  width: 270px;
+  height: 180px;
+}
+
+.transactions > p {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tran-block {
+    height: 60px;
+    background-color: #191919;
+    border-radius: 12px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 0.3;
+    position: absolute;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    align-items: baseline;
+}
+
+.tran-block .left-group {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.left-left p {
+    margin: 14px 0;
+}
+
+.tran-block:nth-child(2) {
+  top: 0;
+  left: 17px;
+  z-index: 3;
+  opacity: 1;
+}
+
+.tran-block:nth-child(3) {
+    width: 250px;
+    top: 50px;
+    left: 27px;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.tran-block:nth-child(4) {
+    width: 230px;
+    top: 100px;
+    left: 37px;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.exchange {
+    margin: 20px;
+}
+
+.exchange span {
+    margin-left: 10px;
+}
+
+.mini-tabl {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.currency {
+    width: auto;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #262626;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-left {
+    border-top-left-radius: 10px;
+}
+
+.top-right {
+    border-top-right-radius: 10px;
+}
+
+.bottom-left {
+    height: 40px;
+    border-bottom-left-radius: 10px;
+}
+
+.bottom-right {
+    height: 40px;
+    border-bottom-right-radius: 10px;
+}
+
+div.currency img {
+    height: 40px;
+    width: 40px;
+}
+
+.exch {
+  margin: 20px auto 0;
+  display: block;
+  width: 290px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #22251b;
+  color: #d1ff4c;
+  cursor: pointer;
+}
+
+.supported {
+    top: -50px; 
+    right: 0;
+    width: 340px;
+    margin-top: 25px;
+    position: absolute;
+    background: #22251b;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.curr {
+    padding: 5px 5px;
+    border: 1px solid none;
+    border-radius: 50px;
+    background-color: #191919;
+    display: flex;
+    gap: 10px;
+}
+
+.curr button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #262626;
+  color: #c6ff00;
+  cursor: pointer;
+}
+
+.curr button img {
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -168,14 +410,12 @@ span.green-color {
         border-radius: 100px;
     }
 
-    /* Лівий блок (логотип) */
     .left-group {
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    /* Середина (навігація) */
     .nav-links {
         display: flex;
         gap: 30px;
@@ -193,7 +433,6 @@ span.green-color {
         background: #333;
     }
 
-    /* Правий блок (Sign up / Login) */
     .auth-buttons {
         display: flex;
         gap: 15px;
@@ -212,57 +451,56 @@ span.green-color {
     }
 
     .auth-buttons a.login {
-        background: #c6ff00; /* твій неоновий зелений */
+        background: #c6ff00;
         color: black;
         font-weight: 600;
     }
 
-    /* Ховаємо бургер-меню */
     .btn-nav-bar {
         display: none;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 902px) {
     .nav-links {
-        display: flex !important; /* меню показати */
+        display: flex !important;
         gap: 30px;
     }
 
     .auth-buttons {
-        display: flex !important; /* кнопки показати */
+        display: flex !important; 
         gap: 15px;
     }
 
     .btn-nav-bar {
-        display: none !important; /* бургер сховати */
+        display: none !important;
     }
 
     .dropdown-content {
-        display: none !important; /* випадаюче меню ховаємо */
+        display: none !important; 
     }
 }
 
 @media (max-width: 901px) {
     .nav-links,
     .auth-buttons {
-        display: none; /* ховаємо посилання і кнопки */
+        display: none;
         position: absolute;
         top: 0;
-        left: -200%; /* далеко за межами */
-        pointer-events: none; /* курсор не працює */
+        left: -200%;
+        pointer-events: none;
         opacity: 0;
         transition: all 0.3s ease;
     }
 
     .btn-nav-bar {
-        display: block; /* показуємо бургер */
+        display: block;
     }
 
     .dropdown-content {
-        display: none; /* спочатку приховано */
+        display: none; 
         position: absolute;
-        top: 100px;  /* під хедером */
+        top: 100px;
         right: 10px;
         background: #262626;
         min-width: 180px;
@@ -292,7 +530,6 @@ span.green-color {
         background: #333;
     }
 }
-
 
 
 /* ------------------------------ END Media query ---------------------------- */
