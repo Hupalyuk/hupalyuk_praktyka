@@ -226,6 +226,7 @@ div.arrows {
 img.arrows {
     width: 300px;
     height: 300px;
+    z-index: -2;
 }
 
 div.transactions {
@@ -463,13 +464,16 @@ div.currency img {
     }
 /* ------------------------------------  */
     .grid {
-        margin: 0 auto;
+        margin: 0 100px;
         display: flex;
         grid-template-columns: 1fr 1fr;
     }
 
     div.cell {
+        top: 60px;
+        transform: scale(1.3);
         text-align: left;
+        left: -60px;
     }
 
     .cell h1 {
@@ -482,7 +486,8 @@ div.currency img {
     }
 
     .cell-transactions {
-        margin-right: 130px;
+        transform: scale(1.3);
+        margin-top: 115px;
     }
 }
 
