@@ -3,6 +3,8 @@
 @import url(icons.css);
 
 * {
+
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -150,9 +152,9 @@ img.picture-bg {
 }
 
 .cell {
-    width: 600px;
+    /* width: 500px; */
     text-align: center;
-    margin: 0 auto 80px;   
+    margin: 0 auto;   
 }
 
 .cell h1 {
@@ -183,6 +185,7 @@ span.green-color {
 }
 
 .cell-transactions {
+    overflow: hidden;
     position: relative;
     width: 350px;
     height: 520px;
@@ -191,7 +194,6 @@ span.green-color {
     align-items: center;
     background-color: #191919;
     margin: 0 auto;
-
 }
 
 .cell-transactions .arrows img {
@@ -215,12 +217,11 @@ span.green-color {
     z-index: 1;
 }
 
-div.arrows {
-    position: absolute;
+.arrows {
+    position: relative;
     top: -110px;
     right: -100px;
     z-index: -1;
-
 }
 
 img.arrows {
@@ -399,8 +400,6 @@ div.currency img {
   height: 30px;
 }
 
-
-
 /* ------------------------------ Media query ------------------------------- */
 
 @media (min-width: 902px) {
@@ -467,6 +466,11 @@ div.currency img {
         margin: 0 100px;
         display: flex;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .cell {
+        width: 500px;
+        margin: 30px 120px 0 0;
     }
 
     div.cell {
