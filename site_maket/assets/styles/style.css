@@ -57,8 +57,8 @@ img.picture-bg {
 .nav-bar {
     position: absolute;
     top: 8%;
-    right: 10px;
-    left: 10px;
+    right: 80px;
+    left: 80px;
     /* width: calc(100% + 40px); */
     height: 88px;
     display: flex;
@@ -139,10 +139,10 @@ img.picture-bg {
 }
 
 .grid {
-    width: 505px;
+    width: auto;
     top: 27%;
     display: grid;
-    margin: 0 25px;
+    margin: 0 auto;
 }
 
 .gachok {
@@ -150,8 +150,9 @@ img.picture-bg {
 }
 
 .cell {
+    width: 600px;
     text-align: center;
-    margin-bottom: 80px;   
+    margin: 0 auto 80px;   
 }
 
 .cell h1 {
@@ -190,6 +191,7 @@ span.green-color {
     align-items: center;
     background-color: #191919;
     margin: 0 auto;
+
 }
 
 .cell-transactions .arrows img {
@@ -358,9 +360,9 @@ div.currency img {
   cursor: pointer;
 }
 
-.supported {
-    top: -50px; 
-    right: 0;
+.supported { 
+    top: 20px;
+    right: -100px;
     width: 340px;
     margin-top: 25px;
     position: absolute;
@@ -458,6 +460,29 @@ div.currency img {
 
     .btn-nav-bar {
         display: none;
+    }
+/* ------------------------------------  */
+    .grid {
+        margin: 0 auto;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.cell {
+        text-align: left;
+    }
+
+    .cell h1 {
+        text-align: left;
+    }
+
+    .cell .message {
+        left: 10px;
+        margin: 0 0 20px;
+    }
+
+    .cell-transactions {
+        margin-right: 130px;
     }
 }
 
