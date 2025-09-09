@@ -402,6 +402,7 @@ div.currency img {
 .second-section {
     margin-top: 140px;
     margin-right: -200px;
+    margin-bottom: 20px;
     padding: 20px;
     text-align: center;
 }
@@ -498,6 +499,78 @@ div.currency img {
     margin-bottom: 30px;
     border-bottom: 1px solid #353535;
 }
+
+.grid-sec .border-down:nth-child(3) {
+    border: none;
+}
+
+/* --------------------------------- three-section ------------------------ */
+
+.three-section {
+    margin-right: -200px;
+}
+
+.header-three {
+    padding: 30px;
+    text-align: center;
+}
+
+.header-three span {
+    color: #caff33;
+}
+
+.header-three p {
+    margin: 20px 0;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.grid-three {
+    display: grid;
+}
+
+.mini-tabl-three {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid none;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    /* background-image: url(/assets/images/three-section.png); */
+}
+
+.mini-tabl-three img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 52px;
+    z-index: 1;
+}
+
+.mini-tabl-three .icon-money {
+    width: 80px;
+    height: 80px;
+}
+
+.cell-three {
+    margin: 10px;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: s[space-around];
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #262626;
+    border-radius: 20px;
+    background-color: #191919;
+    font-weight: 300;
+    z-index: 2;
+}
+
 
 /* ------------------------------ Media query ------------------------------- */
 
