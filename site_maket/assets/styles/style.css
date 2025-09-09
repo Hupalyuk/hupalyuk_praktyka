@@ -3,7 +3,7 @@
 @import url(icons.css);
 
 * {
-
+    /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -59,9 +59,8 @@ img.picture-bg {
 .nav-bar {
     position: absolute;
     top: 8%;
-    right: 80px;
-    left: 80px;
-    /* width: calc(100% + 40px); */
+    left: 70px;
+    width: calc(100% + 50px);
     height: 88px;
     display: flex;
     align-items: center;
@@ -118,7 +117,9 @@ img.picture-bg {
 }
 
 .hero-seaction {
-    margin-top: 240px;
+    margin-right: -200px;
+    margin-top: 200px;
+    /* overflow: hidden; */
 }
 
 .message {
@@ -145,16 +146,13 @@ img.picture-bg {
     top: 27%;
     display: grid;
     margin: 0 auto;
-}
-
-.gachok {
-    position: relative;
+    /* overflow: hidden; */
 }
 
 .cell {
-    /* width: 500px; */
     text-align: center;
-    margin: 0 auto;   
+    margin: 0 auto;
+    padding: 50px;   
 }
 
 .cell h1 {
@@ -185,7 +183,6 @@ span.green-color {
 }
 
 .cell-transactions {
-    overflow: hidden;
     position: relative;
     width: 350px;
     height: 520px;
@@ -196,19 +193,16 @@ span.green-color {
     margin: 0 auto;
 }
 
-.cell-transactions .arrows img {
-  top: 300px;
-  right: -40px;
-}
-
 .fife-k {
     width: 160px;
     height: 70px;
     padding: 0 10px;
     position: absolute;
-    top: -115px;
-    left: -50px;
+    font-size: 12px;
+    top: -50px;
+    left: -40px;
     display: flex;
+    gap: 5px;
     justify-content: space-between;
     align-items: center;
     border: 1px solid none;
@@ -219,15 +213,14 @@ span.green-color {
 
 .arrows {
     position: relative;
-    top: -110px;
-    right: -100px;
-    z-index: -1;
+    top: -10px;
+    right: -50px;
+    z-index: -2;
 }
 
 img.arrows {
     width: 300px;
     height: 300px;
-    z-index: -2;
 }
 
 div.transactions {
@@ -242,6 +235,7 @@ div.transactions > p {
   position: relative;
   width: 270px;
   height: 180px;
+  top: -300px;
 }
 
 .transactions > p {
@@ -304,6 +298,8 @@ div.transactions > p {
 }
 
 .exchange {
+    top: -310px;
+    position: relative;
     margin: 20px;
 }
 
@@ -319,7 +315,7 @@ div.transactions > p {
 
 .currency {
     width: auto;
-    height: 60px;
+    height: 80px;
     padding: 10px;
     border: 1px solid #262626;
     display: flex;
@@ -336,12 +332,12 @@ div.transactions > p {
 }
 
 .bottom-left {
-    height: 40px;
+    height: 60px;
     border-bottom-left-radius: 10px;
 }
 
 .bottom-right {
-    height: 40px;
+    height: 60px;
     border-bottom-right-radius: 10px;
 }
 
@@ -351,23 +347,24 @@ div.currency img {
 }
 
 .exch {
-  margin: 20px auto 0;
-  display: block;
-  width: 290px;
-  padding: 12px;
-  border-radius: 25px;
-  border: none;
-  background: #22251b;
-  color: #d1ff4c;
-  cursor: pointer;
+    position: relative;
+    top: -300px;
+    margin: 0 auto 0;
+    display: block;
+    width: 290px;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #22251b;
+    color: #d1ff4c;
+    cursor: pointer;
 }
 
 .supported { 
-    top: 20px;
-    right: -100px;
-    width: 340px;
-    margin-top: 25px;
-    position: absolute;
+    top: -250px;
+    right: 15px;
+    width: 390px;
+    position: relative;
     background: #22251b;
     border-radius: 50px;
     padding: 10px 20px;
@@ -400,9 +397,111 @@ div.currency img {
   height: 30px;
 }
 
+/* second-section */
+
+.second-section {
+    margin-top: 140px;
+    margin-right: -200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
+.text span {
+    color: #caff33;
+}
+
+.text p {
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.sec-btn {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: #1c1c1c;
+    border: 1px solid #262626;
+    border-radius: 100px;
+}
+
+.sec-btn button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 100px;
+}
+
+.sec-btn .btn-on {
+    background-color: #caff33;
+}
+
+.sec-btn .btn-off {
+    color: white;
+}
+
+.grid-sec {
+    display: grid;
+    margin: 50px 0 0;
+}
+.grid-sec hr {
+    opacity: 0.1;
+    margin-bottom: 30px;
+}
+
+.cell-sec {
+    display: grid;
+    justify-items: center;
+}
+
+.cell-sec .icon-bag {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.cell-sec .download {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.cell-sec .icon-money {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.cell-sec span {
+    font-size: 24px;
+    margin-bottom:  15px;
+}
+
+.second-section p {
+    font-size: 20px;
+}
+
+.cell-sec p {
+    color: #b3b3b3;
+    margin-bottom: 40px;
+}
+
+.grid-sec .border-down {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #353535;
+}
+
 /* ------------------------------ Media query ------------------------------- */
 
-@media (min-width: 902px) {
+@media (min-width: 1000px) {
     .nav-bar {
         display: flex;
         justify-content: space-between;
@@ -464,20 +563,21 @@ div.currency img {
 /* ------------------------------------  */
     .grid {
         margin: 0 100px;
-        display: flex;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
     .cell {
-        width: 500px;
-        margin: 30px 120px 0 0;
+        width: 700px;
+        left: -40px;
     }
 
     div.cell {
-        top: 60px;
-        transform: scale(1.3);
+        width: 600px;
+        left: 0;
+        top: 20px;
+        transform: scale(1.2);
         text-align: left;
-        left: -60px;
     }
 
     .cell h1 {
@@ -490,32 +590,44 @@ div.currency img {
     }
 
     .cell-transactions {
-        transform: scale(1.3);
-        margin-top: 115px;
+        margin-top: 60px;
+    }
+
+    .supported {
+        left: 100px;
+    }
+
+    .header-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-sec .text {
+        width: 800px;
+        text-align: left;
+    }
+
+    .header-sec h1 {
+        text-align: left;
+    }
+
+    .second-section .grid-sec {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .grid-sec .border-down {
+        border-right: 1px solid #262626;
+        border-bottom: none;
+        padding: 0 20px;
+    }
+
+    .grid-sec .border-down:nth-child(3) {
+        border: none;
     }
 }
 
-@media (min-width: 902px) {
-    .nav-links {
-        display: flex !important;
-        gap: 30px;
-    }
-
-    .auth-buttons {
-        display: flex !important; 
-        gap: 15px;
-    }
-
-    .btn-nav-bar {
-        display: none !important;
-    }
-
-    .dropdown-content {
-        display: none !important; 
-    }
-}
-
-@media (max-width: 901px) {
+@media (max-width: 999px) {
     .nav-links,
     .auth-buttons {
         display: none;
