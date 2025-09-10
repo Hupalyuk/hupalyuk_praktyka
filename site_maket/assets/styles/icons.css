@@ -120,4 +120,11 @@
   background-size: contain;
 }
 
+.icon-mini-arrow {
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 1.25L6 5.75L1.5 1.25' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+}
 
