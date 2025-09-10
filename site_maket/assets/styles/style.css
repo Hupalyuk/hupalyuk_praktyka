@@ -34,11 +34,13 @@
 }
 
 body{
+    /* width: 1300px; */
     font-family: "Lexend", sans-serif;
     color: white;
     font-weight: 200;
     height: 1500px;
     background-color: #191919;
+    /* overflow: hidden; */
 }
 
 header {
@@ -60,7 +62,7 @@ img.picture-bg {
     position: absolute;
     top: 8%;
     left: 70px;
-    width: calc(100% + 50px);
+    width: calc(100% - 130px);
     height: 88px;
     display: flex;
     align-items: center;
@@ -117,9 +119,7 @@ img.picture-bg {
 }
 
 .hero-seaction {
-    margin-right: -200px;
     margin-top: 200px;
-    /* overflow: hidden; */
 }
 
 .message {
@@ -212,15 +212,16 @@ span.green-color {
 }
 
 .arrows {
+    margin-left: 50px;
     position: relative;
     top: -10px;
-    right: -50px;
     z-index: -2;
 }
 
 img.arrows {
     width: 300px;
     height: 300px;
+
 }
 
 div.transactions {
@@ -362,7 +363,7 @@ div.currency img {
 
 .supported { 
     top: -250px;
-    right: 15px;
+    right: 25px;
     width: 390px;
     position: relative;
     background: #22251b;
@@ -401,9 +402,8 @@ div.currency img {
 
 .second-section {
     margin-top: 140px;
-    margin-right: -200px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0 30px 0 30px;
     text-align: center;
 }
 
@@ -507,7 +507,7 @@ div.currency img {
 /* --------------------------------- three-section ------------------------ */
 
 .three-section {
-    margin-right: -200px;
+
 }
 
 .header-three {
@@ -530,16 +530,16 @@ div.currency img {
 }
 
 .mini-tabl-three {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 20px;
+    position: relative;
     border: 1px solid none;
     border-radius: 20px;
     background-color: #1c1c1c;
-    /* background-image: url(/assets/images/three-section.png); */
 }
 
 .mini-tabl-three img {
@@ -547,7 +547,6 @@ div.currency img {
     height: 200px;
     position: absolute;
     top: 0;
-    left: 52px;
     z-index: 1;
 }
 
@@ -557,11 +556,13 @@ div.currency img {
 }
 
 .cell-three {
+    max-height: 160px;
     margin: 10px;
-    padding: 30px 0;
+    padding: 10px 0;
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
-    align-content: s[space-around];
+    align-content: space-around;
     justify-content: space-around;
     text-align: center;
     border: 1px solid #262626;
@@ -571,14 +572,49 @@ div.currency img {
     z-index: 2;
 }
 
+.text-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.text-three span {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.digit-three {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.digit-three span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #caff33;
+}
+
+.cell-digit-three {
+    padding: 0 50px;
+    border: 5px #262626;
+    border-bottom-style: dashed;
+    margin-bottom: 30px;
+}
 
 /* ------------------------------ Media query ------------------------------- */
 
 @media (min-width: 1000px) {
+
     .nav-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: calc(100% - 140px);
         padding: 0 30px;
         height: 88px;
         border-radius: 100px;
@@ -641,15 +677,14 @@ div.currency img {
     }
 
     .cell {
-        width: 700px;
+        max-width: 700px ;
         left: -40px;
     }
 
     div.cell {
-        width: 600px;
         left: 0;
         top: 20px;
-        transform: scale(1.2);
+        transform: scale(1.1);
         text-align: left;
     }
 
@@ -663,17 +698,22 @@ div.currency img {
     }
 
     .cell-transactions {
+        position: relative;
         margin-top: 60px;
     }
 
     .supported {
-        left: 100px;
+        position: relative;
+        left: 0;
     }
 
     .header-sec {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+    }
+
+    .header-sec .sec-btn {
+        margin-right: 0; 
     }
 
     .header-sec .text {
@@ -698,6 +738,8 @@ div.currency img {
     .grid-sec .border-down:nth-child(3) {
         border: none;
     }
+
+
 }
 
 @media (max-width: 999px) {
@@ -747,6 +789,12 @@ div.currency img {
 
     .dropdown-content a:hover {
         background: #333;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .second-section {
+        margin-right: -40px;
     }
 }
 
