@@ -33,12 +33,20 @@
     overflow: hidden;
 }
 
+button {
+    cursor: pointer;
+}
+
+.jus-cont-spa-beet {
+    justify-content: space-between;
+}
+
 body{
     /* width: 1300px; */
     font-family: "Lexend", sans-serif;
     color: white;
     font-weight: 200;
-    height: 1500px;
+    height: 10000px;
     background-color: #191919;
     /* overflow: hidden; */
 }
@@ -506,10 +514,6 @@ div.currency img {
 
 /* --------------------------------- three-section ------------------------ */
 
-.three-section {
-
-}
-
 .header-three {
     padding: 30px;
     text-align: center;
@@ -599,7 +603,7 @@ div.currency img {
 }
 
 .cell-digit-three {
-    padding: 50px 50px;
+    padding: 40px;
     border: 2px transparent;
     border-bottom-style: dashed;
     border-image: repeating-linear-gradient(
@@ -613,19 +617,103 @@ div.currency img {
     border: none;
 }
 
+.cell-digit-three span {
+    line-height: 2;
+    margin-bottom: 150px;
+}
+
 .text-digit .three-btn {
     margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .text-digit button {
     width: 140px;
-    height: 40px;
+    height: 60px;
     font-size: 20px;
     background-color: #1c1c1c;
     border: 1px solid #262626;
     border-radius: 100px;
     color: white;
 }
+
+/* --------------------------------------------------------- */
+
+.header-four {
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.header-four span {
+    color: #caff33;
+}
+
+.header-four h1 {
+    margin: 50px 0 20px;
+}
+
+.list-menu-four {
+    height: 100px;
+    margin: 0 10px 0px;
+    padding: 10px 30px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #1c1c1c;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.list-menu-four button {
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #262626;
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 100px;
+}
+
+.list-menu-four .unique {
+    color: #caff33;
+    background-color: #191919;
+}
+
+.grid-four {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cell-four {
+    height: 200px;
+    margin: 10px 0;
+    padding: 30px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+}
+
+.cell-four span {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.cell-four p {
+    width: 94%;
+}
+
+.cell-four .jus-cont-spa-beet {
+    display: flex;
+}
+
 
 /* ------------------------------ Media query ------------------------------- */
 
@@ -727,7 +815,7 @@ div.currency img {
         position: relative;
         left: 0;
     }
-
+/* --------------------------------------------------- */
     .header-sec {
         display: flex;
         align-items: center;
@@ -759,6 +847,116 @@ div.currency img {
     .grid-sec .border-down:nth-child(3) {
         border: none;
     }
+/* ----------------------------333-------------------------------- */
+    .grid-three {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .digit-three {
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+
+    .mini-tabl-three {
+        width: 95%;
+        align-items: center;
+    }
+
+    .cell-three {
+        height: 250px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .text-three {
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .digit-three {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .text-digit .three-btn {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+
+    .ord-1 {
+        order: 1;
+    }
+
+    .ord-2 {
+        order: 2;
+    }
+
+    .ord-3 {
+        order: 4;
+    }
+
+    .ord-4 {
+        order: 3;
+    }
+
+    .cell-digit-three {
+        margin: 0;
+        padding-left: 50px;
+        border-right: 2px dashed #262626;
+        border-bottom: none;
+        border-image: repeating-linear-gradient(
+    to top,
+    #262626 0 20px,  /* довжина штриха */
+    transparent 10px 38px /* відстань між ними */
+  ) 1;
+    }
+
+    .cell-digit-three:nth-child(3) {
+        border: none;
+    }
+    
+    /* ------------------------------------------------- */
+
+    .header-four {
+        width: 80%;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    .one-more-four {
+        align-items: baseline;
+        display: flex;
+    }
+
+    .list-menu-four button {
+        width: 100%;
+    }
+
+    .list-menu-four {
+        width: 300px;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 20px;
+        overflow: visible;
+        white-space: nowrap;
+    }
+
+    .grid-four {
+        padding:0 10px 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cell-four {
+        margin: 10px;
+    }
+
 
 
 }
@@ -812,12 +1010,6 @@ div.currency img {
         background: #333;
     }
 }
-
-/* @media screen and (max-width: 424px) {
-    .second-section {
-        margin-right: -40px;
-    }
-} */
 
 
 /* ------------------------------ END Media query ---------------------------- */

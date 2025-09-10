@@ -112,3 +112,12 @@
   background-size: contain;
 }
 
+.icon-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.50005 14L14.5 0.999958M14.5 0.999958V13.48M14.5 0.999958L2.02005 0.999958' stroke='%23CAFF33' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+}
+
+
