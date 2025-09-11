@@ -1,8 +1,6 @@
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("show");
 }
-
-// закрити меню при кліку поза ним
 window.onclick = function(event) {
     if (!event.target.matches('.btn-nav-bar')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
