@@ -46,13 +46,11 @@ p {
 }
 
 body{
-    /* width: 1300px; */
     font-family: "Lexend", sans-serif;
     color: white;
     font-weight: 200;
-    height: 10000px;
+    height: auto;
     background-color: #191919;
-    /* overflow: hidden; */
 }
 
 header {
@@ -73,8 +71,8 @@ img.picture-bg {
 .nav-bar {
     position: absolute;
     top: 8%;
-    left: 70px;
-    width: calc(100% - 130px);
+    left: 40px;
+    right: 40px;
     height: 88px;
     display: flex;
     align-items: center;
@@ -94,6 +92,10 @@ img.picture-bg {
     align-items: center;
     gap: 5px;
     margin-left: 10px;
+}
+
+.left-group span {
+    font-size: 18px;
 }
 
 .dropdown {
@@ -131,13 +133,15 @@ img.picture-bg {
 }
 
 .hero-seaction {
-    margin-top: 200px;
+    margin: 240px auto 0;
+    /* margin-top: 200px; */
 }
 
 .message {
     height: 50px;
-    width: 350px;
+    width: 300px;
     margin: 0 auto 20px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -152,19 +156,17 @@ img.picture-bg {
 .message span {
     font-weight: 200;
 }
-
+/* ------------------------------------- */
 .grid {
     width: auto;
-    top: 27%;
     display: grid;
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 .cell {
     text-align: center;
     margin: 0 auto;
-    padding: 50px 0 0 0;   
+    margin-left: 5px;  
 }
 
 .cell h1 {
@@ -193,16 +195,15 @@ img.picture-bg {
 span.green-color {
     color: #c6ff00;
 }
-
+/* ------------------------------------------------ */
 .cell-transactions {
     position: relative;
-    width: 350px;
+    width: 320px;
     height: 520px;
     border: 1px solid #282926;
     border-radius: 10px;
-    align-items: center;
     background-color: #191919;
-    margin: 0 auto;
+    margin: 80px auto 0;
 }
 
 .fife-k {
@@ -212,7 +213,7 @@ span.green-color {
     position: absolute;
     font-size: 12px;
     top: -50px;
-    left: -40px;
+    left: -26px;
     display: flex;
     gap: 5px;
     justify-content: space-between;
@@ -224,8 +225,9 @@ span.green-color {
 }
 
 .arrows {
-    margin-left: 50px;
-    position: relative;
+    display: none;
+    margin-left: 30px;
+    position: absolute;
     top: -10px;
     z-index: -2;
 }
@@ -237,7 +239,7 @@ img.arrows {
 }
 
 div.transactions {
-    margin: 60px 20px 0 20px;
+    margin-top: 60px;
 }
 
 div.transactions > p {
@@ -248,13 +250,13 @@ div.transactions > p {
   position: relative;
   width: 270px;
   height: 180px;
-  top: -300px;
+  margin-left: 10px;
 }
 
 .transactions > p {
     position: absolute;
     top: 20px;
-    left: 0;
+    left: 20px;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -311,18 +313,16 @@ div.transactions > p {
 }
 
 .exchange {
-    top: -310px;
+
     position: relative;
     margin: 20px;
 }
 
-.exchange span {
-    margin-left: 10px;
-}
-
 .mini-tabl {
+    width: 266px;
     margin: 10px;
     display: grid;
+    padding: 0;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -361,8 +361,7 @@ div.currency img {
 
 .exch {
     position: relative;
-    top: -300px;
-    margin: 0 auto 0;
+    margin: 0 auto;
     display: block;
     width: 290px;
     padding: 12px;
@@ -374,13 +373,15 @@ div.currency img {
 }
 
 .supported { 
-    top: -250px;
-    right: 25px;
-    width: 390px;
+    width: 360px;
+    top: 50px;
+    left: -17px;
     position: relative;
     background: #22251b;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 14px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -538,8 +539,8 @@ div.currency img {
 }
 
 .mini-tabl-three {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto 30px;
@@ -558,14 +559,20 @@ div.currency img {
     z-index: 1;
 }
 
+.mini-tabl-three .rev-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-270deg);
+}
+
 .mini-tabl-three .icon-money {
     width: 80px;
     height: 80px;
 }
 
 .cell-three {
-    height: 160px;
-
+    height: 140px;
     margin: 10px;
     padding: 10px 0;
     font-size: 14px;
@@ -585,7 +592,7 @@ div.currency img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -792,6 +799,8 @@ div.currency img {
 
 .five-btn {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .five-btn button {
@@ -908,10 +917,10 @@ div.currency img {
 }
 
 .six-btn {
-    margin: 0 auto;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .six-btn button {
@@ -922,14 +931,165 @@ div.currency img {
     width: 60px;
 }
 
+/* ------------------------77777777------------------------- */
+
+.seven-section {
+    margin: 10px;
+    margin-top: 100px;
+    border: 1px solid #262626;
+    border-radius: 20px;
+}
+
+.seven-section {
+    position: relative;
+}
+
+.seven-section img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.block-sev {
+    height: auto;
+    padding: 20px;
+}
+
+.header-sev {
+    text-align: center;
+    margin-bottom: 20px;   
+}
+
+.header-sev h1 {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.header-sev span {
+    color: #caff33;
+}
+
+.sev-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.sev-btn button {
+    width: auto;
+    height: 30px;
+    padding: 22px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #262626;
+    border-radius: 100px;
+    background-color: #c6ff00;
+}
+
+.footer {
+    height: auto;
+    margin-top: 100px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    background-color: #1c1c1c;
+}
+
+.cell-foot {
+    height: 180px;
+    gap: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #262626;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.up-group {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.list-foot {
+    display: flex;
+    gap: 20px;
+}
+
+.cell-foot-avg {
+    height: 160px;
+    border-bottom: 1px solid #262626;
+    display: flex;
+    justify-content: center;
+}
+
+.list-foot-avg {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.cell-foot-down {
+    margin-top: 50px;
+    height: auto;
+    position: relative;
+}
+
+.privacy {
+    height: 150px;
+    padding-top: 20px;
+    display: grid;
+    border: 1px solid #262626;
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    background-color: #191919;
+}
+
+.icon-btn {
+    top: -25px;
+    position: absolute;
+}
+
+.icon-btn button {
+    height: 50px;
+    width: 50px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 100px;
+    background-color: #caff33;
+}
 
 /* ------------------------------ Media query ------------------------------- */
 
 @media (min-width: 650px) {
-    
+
+    .list-menu-four {
+        justify-content: center;
+
+    }
+
+
+    .six-section-part {
+        display: flex;
+        align-items: center;
+    }   
+
     .disp-none-1 {
         display: flex;
         order: 1;
+    }
+
+    .fade-rght-lft {
+        width: 88%;
     }
 
     .info-six {
@@ -940,6 +1100,8 @@ div.currency img {
 
     .disp-none-left {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .disp-none-right {
@@ -947,13 +1109,32 @@ div.currency img {
     }
 
     .six-btn {
-        margin: 0 auto;
         gap: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        position: relative;
     }
-        
+
+}
+
+@media (min-width: 720px) {
+    
+    .cell-foot-avg {
+        justify-content: center;
+    }
+
+    .icon-btn {
+        position: static;
+        display: flex;
+        gap: 2px;
+    }
+
+    .privacy {
+        height: auto;
+        padding: 10px;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
 }
 
 @media (min-width: 1000px) {
@@ -1029,6 +1210,10 @@ div.currency img {
         left: -40px;
     }
 
+    .cell button {
+        margin: 40px 0;
+    }
+
     div.cell {
         left: 0;
         top: 20px;
@@ -1047,7 +1232,12 @@ div.currency img {
 
     .cell-transactions {
         position: relative;
-        margin-top: 60px;
+        margin-top: 10px;
+    }
+
+    .arrows {
+        margin-left: 50px;
+        top: -20px;
     }
 
     .supported {
@@ -1268,9 +1458,25 @@ div.currency img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* -----------------------7----------------------------- */
+
+    .seven-section {
+        margin: 100px;
+    }
+
+    .block-sev {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-sev {
+        width: 80%;
+        padding: 10px 0;
+        text-align: start;
+    }
 }
-
-
 
 @media (max-width: 999px) {
     .nav-links,

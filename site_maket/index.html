@@ -8,8 +8,10 @@
     <link rel='stylesheet' href='assets/styles/style.css'>
 </head>
 <body>
-    <div class="pos-rel"><img src="assets/images/hero-cover-1.png" class="picture-bg" alt="wow"></div>
-    <!-- <div class="header">
+    <div class="pos-rel">
+        <img src="assets/images/hero-cover-1.png" class="picture-bg" alt="wow">
+    </div>
+    <div class="header">
         <div class="nav-bar">
             <div class="left-group">
                 <div class="icon-nav-bar"></div>
@@ -38,7 +40,7 @@
     </div>
     <div class="hero-seaction">
         <div class="grid">
-            <div class="cell pos-rel">
+            <div class="cell">
                 <div class="message">
                     <div class="green-check"></div>
                     <span>No LLC Required, No Credit Check.</span>
@@ -50,9 +52,10 @@
                     We are committed to delivering personalized and innovative services that 
                     prioritize our customers' needs.
                 </p>
-                <button>Open Acount</button>
+                <div class="hero-btn">
+                    <button>Open Acount</button>
+                </div>
             </div>
-
             <div class="cell-transactions">
                 <div class="arrows"><img class="arrows" src="assets/images/arrows.png" alt="arrows"></div>
                 <div class="fife-k">
@@ -128,7 +131,6 @@
             </div>
         </div>
     </div>
-    
     <div class="second-section">
         <div class="header-sec">
             <div class="text">
@@ -178,7 +180,6 @@
             </div>
         </div>
     </div>
-
     <div class="three-section">
         <div class="header-three">
             <h1><span>Use Cases</span></h1>
@@ -189,7 +190,7 @@
         </div>
         <div class="grid-three pos-rel">
             <div class="mini-tabl-three ord-1">
-                <img src="assets\images\three-section.png" alt="point's">
+                <img src="assets/images/three-section.png" alt="point's">
                 <div class="cell-three">
                     <div class="icon-watch"></div>
                     <span>Managing Personal Finances</span>
@@ -236,7 +237,7 @@
                 </div>
             </div>
             <div class="mini-tabl-three ord-3">
-                <img class="revers" src="assets\images\three-section.png" alt="point's">
+                <img class="revers rev-img" src="assets/images/three-section.png" alt="point's">
                 <div class="cell-three">
                     <div class="icon-bighouse"></div>
                     <span>Startups and Entrepreneurs</span>
@@ -395,7 +396,7 @@
         <div class="five-btn">
             <button>Load All FAQ’s<div class="icon-mini-arrow"></div></button>
         </div>
-    </div> -->
+    </div>
     <div class="six-section">
         <div class="header-five">
             <h1>Our <span>Testimonials</span></h1>
@@ -409,45 +410,107 @@
                 <button class="btn-off">For Businesses</button>
             </div>
         </div>
-        <div class="six-btn"><button class="disp-none-left"><div class="icon-arrow-six revers "></div></button>
-        <div class="fade-rght-lft">
-            <div class="fade-lft-rght">
-                <div class="info-six">
-                    <div class="cell-info-six ord-2">
-                        <div class="icon-horns"></div>
-                        <p>
-                            I recently started my own business, and YourBank has been 
-                            instrumental in helping me set up my business accounts and 
-                            secure the financing I needed. Their expert guidance and 
-                            tailored solutions have been invaluable.
-                        </p>
-                        <span class="fnt-wei-4">John D</span>
-                    </div>
-                    <div class="cell-info-six disp-none-1">
-                        <div class="icon-horns"></div>
-                        <p>
-                            YourBank has been my trusted financial partner for years. 
-                            Their personalized service and innovative digital banking 
-                            solutions have made managing my finances a breeze.
-                        </p>
-                        <span class="fnt-wei-4">Sara T</span>
-                    </div>
-                    <div class="cell-info-six disp-none-2">
-                        <div class="icon-horns"></div>
-                        <p>
-                            I love the convenience of YourBank's mobile banking app. 
-                            It allows me to stay on top of my finances and make transactions 
-                            on the go. The app is user-friendly and secure, giving me peace 
-                            of mind.
-                        </p>
-                        <span class="fnt-wei-4">Emily G</span>
+        <div class="six-section-part">
+            <div class="six-btn">
+                <button class="disp-none-left">
+                    <div class="icon-arrow-six revers "></div>
+                </button>
+            </div>
+            <div class="fade-rght-lft">
+                <div class="fade-lft-rght">
+                    <div class="info-six">
+                        <div class="cell-info-six ord-2">
+                            <div class="icon-horns"></div>
+                            <p>
+                                I recently started my own business, and YourBank has been 
+                                instrumental in helping me set up my business accounts and 
+                                secure the financing I needed. Their expert guidance and 
+                                tailored solutions have been invaluable.
+                            </p>
+                            <span class="fnt-wei-4">John D</span>
+                        </div>
+                        <div class="cell-info-six disp-none-1">
+                            <div class="icon-horns"></div>
+                            <p>
+                                YourBank has been my trusted financial partner for years. 
+                                Their personalized service and innovative digital banking 
+                                solutions have made managing my finances a breeze.
+                            </p>
+                            <span class="fnt-wei-4">Sara T</span>
+                        </div>
+                        <div class="cell-info-six disp-none-2">
+                            <div class="icon-horns"></div>
+                            <p>
+                                I love the convenience of YourBank's mobile banking app. 
+                                It allows me to stay on top of my finances and make transactions 
+                                on the go. The app is user-friendly and secure, giving me peace 
+                                of mind.
+                            </p>
+                            <span class="fnt-wei-4">Emily G</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="six-btn">
+                <button class="disp-none-right"><div class="icon-arrow-six revers"></div></button>
+                <button><div class="icon-arrow-six"></div></button>
+            </div>
         </div>
-        <div class="six-btn">
-            <button class="disp-none-right"><div class="icon-arrow-six revers"></div></button>
-            <button><div class="icon-arrow-six"></div></button>
+    </div>
+    <div class="seven-section">
+        <img src="assets\images\three-section.png" alt="point's">
+        <div class="block-sev">
+            <div class="header-sev">
+                <h1>Start your financial journey with <span>YourBank today!</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. 
+                    Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
+                </p>
+            </div>
+            <div class="sev-btn">
+                <button>Open Account</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cell-foot up">
+            <div class="up-group">
+                <div class="icon-nav-bar"></div>
+                <span>YourBanK</span>                
+            </div>
+            <div class="list-foot">
+                <span>Home</span>
+                <span>Careers</span>
+                <span>About</span>
+                <span>Security</span>
+            </div>
+        </div>
+        <div class="cell-foot-avg">
+            <div class="list-foot-avg">
+                <div class="group-1">
+                    <div class="icon-mail"></div>
+                    <span>hello@skillbirdge.com</span>
+                </div>
+                <div class="group-2">
+                    <div class="icon-phone"></div>
+                    <span>+919181322309</span>
+                </div>
+                <div class="group-3">
+                    <div class="icon-location"></div>
+                    <span>Somewhere in the World</span>
+                </div>
+            </div>
+        </div>
+        <div class="cell-foot-down">
+            <div class="privacy">
+                <div class="icon-btn">
+                    <button><div class="icon-fb"></div></button>
+                    <button><div class="icon-twitter"></div></button>
+                    <button><div class="icon-linkedin"></div></button>
+                </div>
+                <p>YourBank All Rights Reserved</p>
+                <p>Privacy Policy | Terms of Service</p>
+            </div>
         </div>
     </div>
     <script src="scripts/dropdown-menu.js"></script>
