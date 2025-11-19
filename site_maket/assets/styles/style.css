@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.dis-link {
+    pointer-events: none;
+}
+
 .pand-40 {
     padding: 0 20px;
 }
@@ -154,7 +158,7 @@ img.picture-bg {
 }
 
 .hero-seaction {
-    margin: 240px auto 0;
+    margin: 80px auto 0;
 }
 
 .message {
@@ -180,7 +184,12 @@ img.picture-bg {
 .grid {
     width: auto;
     display: grid;
+    /* gap: 100px; */
     margin: 0 auto;
+}
+
+.cell img.trans {
+    width: 100%;
 }
 
 .cell {
@@ -436,7 +445,6 @@ div.currency img {
 .second-section {
     margin-top: 140px;
     margin-bottom: 20px;
-    padding: 0 20px 0 30px;
     text-align: center;
 }
 
@@ -559,8 +567,9 @@ div.currency img {
 }
 
 .mini-tabl-three {
-    width: 350px;
-    height: 350px;
+    width: auto;
+    height: auto;
+    max-width: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto 30px;
@@ -1042,6 +1051,11 @@ div.currency img {
     gap: 20px;
 }
 
+.list-foot a {
+    text-decoration: none;
+    color: white;
+}
+
 .cell-foot-avg {
     height: 160px;
     border-bottom: 1px solid #262626;
@@ -1096,11 +1110,9 @@ div.currency img {
 .navi-bar {
     height: 80px;
     width: calc(100%-100px);
-    /* position: relative; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* top: 50px; */
     margin: 50px 0 0;
     padding: 0 10px;
     border-radius: 50px;
@@ -1108,6 +1120,50 @@ div.currency img {
     background-color: #1c1c1c;
 
 }
+
+/* burger-menu */
+.mobile-menu {
+    width: 200px;
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    background: #1c1c1c;
+    border: 1px solid #262626;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 100;
+}
+
+.mobile-links a {
+    display: block;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-links a:last-child {
+    border-bottom: none;
+}
+
+.mobile-links .login {
+    background: #caff33;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-nav-bar {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* ------------ */
 
 .care-sec-1 {
     position: relative;
@@ -1319,7 +1375,6 @@ picture.about-pict img {
 
 /* about-sec-2 */
 
-
 .grid-about-sec-2 {
     display: grid;
     gap: 20px;
@@ -1330,6 +1385,10 @@ picture.about-pict img {
     border: 1px solid #262626;
     border-radius: 30px ;
     background-color: #1c1c1c;
+}
+
+.cell-about-sec-2 span {
+    font-size: 22px;
 }
 
 .cell-about-sec-2 p {
@@ -1408,7 +1467,7 @@ picture.about-pict img {
 }
 
 .login-sec-1 a {
-    color: white;
+    color: #cfcfcf;
 }
 
 .login-sec-1 .log-group {
@@ -1428,6 +1487,7 @@ picture.about-pict img {
 
 .login-sec-1 .log-group-2 {
     margin: 20px auto;
+    max-width: 630px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1440,7 +1500,7 @@ picture.about-pict img {
     padding: 15px 10px;
     border: 1px solid #282926;
     border-radius: 50px;
-    color: white;
+    color: #cfcfcf;
     background-color: #1c1c1c;
 }
 
@@ -1466,9 +1526,30 @@ picture.about-pict img {
 }
 
 .login-sec-1 .log-group-3 button.sign-btn {
-    color: white;
+    color: #cfcfcf;
     background-color: #262626;
 }
+
+.line-text {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #404040;
+}
+
+.line-text span {
+    margin: 0 10px;
+    color: #cfcfcf;
+}
+
 
 .login-sec-1 .log-group-4 {
     margin-top: 20px;
@@ -1750,6 +1831,10 @@ picture.about-pict img {
         background-color: #caff33;
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     /* care-sec-1 */
     .care-sec-1 {
         width: 100%;
@@ -1875,7 +1960,7 @@ picture.about-pict img {
         gap: 30px;
     }
 
-    .nav-links a {
+    .ref-nav-bar a {
         text-decoration: none;
         color: white;
         font-size: 18px;
@@ -1883,7 +1968,7 @@ picture.about-pict img {
         border-radius: 50px;
     }
 
-    .nav-links a:hover {
+    .ref-nav-bar a:hover {
         background: #333;
     }
 
@@ -1914,8 +1999,14 @@ picture.about-pict img {
         display: none;
     }
 /* -----------------1-------------------  */
+   .hero-seaction {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+   }
+
     .grid {
-        margin: 0 100px;
+        margin: 0;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
@@ -1932,7 +2023,6 @@ picture.about-pict img {
     div.cell {
         left: 0;
         top: 20px;
-        transform: scale(1.1);
         text-align: left;
     }
 
@@ -1963,7 +2053,9 @@ picture.about-pict img {
 /* -------------------22-------------------------------- */
 
     .second-section {
-        margin: 140px 50px 20px;
+        width: 100%;
+        max-width: 1440px;
+        margin: 40px auto 20px;
     }
 
     .header-sec {
@@ -2000,12 +2092,15 @@ picture.about-pict img {
 /* ----------------------------333-------------------------------- */
 
     .three-section {
-        margin: 0 100px;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .grid-three {
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        gap: 50px;
     }
 
     .digit-three {
@@ -2017,6 +2112,7 @@ picture.about-pict img {
     .mini-tabl-three {
         height: 400px;
         width: 100%;
+        max-width: none;
         margin-bottom: 0;
         align-items: center;
     }
@@ -2082,7 +2178,9 @@ picture.about-pict img {
     /* --------------------4444----------------------------- */
 
     .four-section {
-       margin: 0 100px; 
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto; 
     }
 
     .header-four {
@@ -2172,8 +2270,8 @@ picture.about-pict img {
 
     .header-five {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-content: flex-start;
     }
 
     .five-part {
@@ -2196,7 +2294,7 @@ picture.about-pict img {
     .seven-section {
         width: 100%;
         max-width: 1440px;
-        margin: 0 auto;
+        margin: 40px auto 0;
     }
 
     .block-sev {
