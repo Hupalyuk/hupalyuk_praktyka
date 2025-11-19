@@ -61,7 +61,7 @@ button {
 }
 
 p {
-    font-size: 20px;
+    font-size: 17px;
     color: #797979;
     line-height: 1.4;
 }
@@ -1392,6 +1392,115 @@ picture.about-pict img {
     font-size: 24px;
 }
 
+/* ---------------------------------------------- */
+/*------------------ LOGIN ------------------- */
+
+.login-sec-1 {
+    height: auto;
+    margin: 30px 0;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #282926;
+    background-color: #0e0d0d;
+}
+
+.login-sec-1 a {
+    color: white;
+}
+
+.login-sec-1 .log-group {
+    position: relative;
+    z-index: 3;
+}
+
+.login-sec-1 .log-group-1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+}
+
+.login-sec-1 .log-group-2 {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.login-sec-1 .log-group-2 input {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 10px;
+    border: 1px solid #282926;
+    border-radius: 50px;
+    color: white;
+    background-color: #1c1c1c;
+}
+
+.login-sec-1 .log-group-3 {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-sec-1 .log-group-3 button {
+    width: 100%;
+    max-width: 300px;
+    font-weight: 400;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.login-sec-1 .log-group-3 button.log-btn {
+    background-color: #caff33;
+}
+
+.login-sec-1 .log-group-3 button.sign-btn {
+    color: white;
+    background-color: #262626;
+}
+
+.login-sec-1 .log-group-4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.login-sec-1 .log-group-4 a {
+    text-decoration: none;
+}
+
+.login-sec-1 img.log-pic-1 {
+    /* width: 100%; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    opacity: 15%;
+    z-index: 2;
+}
+
+.login-sec-1 img.log-pic-2 {
+    position: absolute;
+    top: -6px;
+    right: 7px;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -1403,6 +1512,12 @@ picture.about-pict img {
     .list-menu-four {
         justify-content: center;
 
+    }
+
+    .six-section {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .six-section-part {
@@ -1470,6 +1585,21 @@ picture.about-pict img {
     }
 
 }
+/* ------------------Login */
+@media (min-width: 1000px) {
+
+    .login-sec-1 img.log-pic-1 {
+        width: 100%;
+    }
+
+    .login-sec-1 {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+
 /* ------------------Security */
 @media (min-width: 1000px) {
     
