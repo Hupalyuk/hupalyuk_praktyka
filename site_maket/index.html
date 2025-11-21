@@ -10,56 +10,55 @@
 <body>
     <div class="pand-40">
         <div class="navi-bar">
-            <div class="mobile-menu">
-                <div class="mobile-links">
-                    <a href="#" class="nt-active">Головна</a>
-                    <a href="careers.html" class="active">Кар'єри</a>
-                    <a href="about.html" class="nt-active">Про нас</a>
-                    <a href="security.html" class="nt-active">Безпека</a>
-
-                    <a href="signUp.html">Реєстрація</a>
-                    <a class="login" href="login.html">Вхід</a>
-                </div>
-            </div>
-
             <div class="left-group">
                 <svg class="icon" width="25" height="25">
-                    <use href="/assets/sprite/sprite.svg#icon-your"></use>
+                    <use href="assets/sprite/sprite.svg#icon-your"></use>
                 </svg>
                 <span class="fnt-wei-4">YourBanK</span>
             </div>
             <div class="ref-nav-bar disp-none fnt-wei-4">
-                <a href="#" class="nt-active">Головна</a>
-                <a href="careers.html" class="active">Кар'єри</a>
-                <a href="about.html" class="nt-active">Про нас</a>
-                <a href="security.html" class="nt-active">Безпека</a>
+                <a href="#">Головна</a>
+                <a href="careers.html">Кар'єри</a>
+                <a href="about.html">Про нас</a>
+                <a href="security.html">Безпека</a>
             </div>
             <div class="right-group disp-none fnt-wei-4">
+
+                
                 <a href="signUp.html">Реєстрація</a>
                 <a class="login" href="login.html">Вхід</a>
             </div>
-            <button class="btn-nav-bar">
-                <svg class="icon" width="25" height="25">
-                    <use href="/assets/sprite/sprite.svg#btn-menu"></use>
+            <button class="btn-nav-bar" id="burgerBtn">
+                <svg class="icon" width="25" height="25" id="burgerIcon">
+                    <use href="assets/sprite/sprite.svg#btn-menu"></use>
                 </svg>
             </button>
         </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="index.html">Головна</a>
+                <a href="careers.html">Кар'єри</a>
+                <a href="about.html">Про нас</a>
+                <a href="security.html">Безпека</a>
+                <a href="signUp.html">Реєстрація</a>
+                <a class="login" href="login.html">Вхід</a>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        
         <div class="hero-seaction">
             <div class="grid">
                 <div class="cell">
                     <div class="message">
                         <div class="green-check"></div>
-                        <span>No LLC Required, No Credit Check.</span>
+                        <span>Не потрібно ТОВ, не потрібно перевіряти кредитну історію.</span>
                     </div>
-                    <h1>Welcome to YourBank Empowering Your <span class="green-color">Financial Journey</span></h1>
+                    <h1>Ласкаво просимо до YourBank, розширюючи можливості вашого <span class="green-color">Фінансова подорож</span></h1>
                     <p>
-                        At YourBank, our mission is to provide comprehensive banking solutions 
-                        that empower individuals and businesses to achieve their financial goals. 
-                        We are committed to delivering personalized and innovative services that 
-                        prioritize our customers' needs.
+                        У YourBank наша місія полягає в наданні комплексних банківських рішень, які дозволяють окремим особам та підприємствам досягати своїх фінансових цілей. Ми прагнемо надавати персоналізовані та інноваційні послуги, які ставлять потреби наших клієнтів на перше місце.
                     </p>
                     <div class="hero-btn">
-                        <button>Open Acount</button>
+                        <button>Відкрити рахунок</button>
                     </div>
                 </div>
                 <div class="cell">
@@ -70,48 +69,40 @@
         <div class="second-section">
             <div class="header-sec">
                 <div class="text">
-                    <h1>Our <span>Products</span></h1>
+                    <h1>Наш <span>Продукти</span></h1>
                     <p>
-                        Discover a range of comprehensive and customizable banking products at 
-                        YourBank, designed to suit your unique financial needs and aspirations
+                        Відкрийте для себе низку комплексних та налаштовуваних банківських продуктів у YourBank, розроблених відповідно до ваших унікальних фінансових потреб та прагнень
                     </p>
                 </div>
                 <div class="sec-btn">
-                    <button class="btn-on">For Individuals</button>
-                    <button class="btn-off">For Businesses</button>
+                    <button class="btn-on">Для фізичних осіб</button>
+                    <button class="btn-off">Для бізнесу</button>
                 </div>
             </div>
             <div class="grid-sec">
                 <div class="cell-sec border-down">
                     <div class="icon-bag"></div>
-                    <span class="fnt-wei-4">Checking Accounts</span>
+                    <span class="fnt-wei-4">Поточні рахунки</span>
                     <p>
-                        Enjoy easy and convenient access to your funds with our range of checking 
-                        account options. Benefit from features such as online and mobile banking, 
-                        debit cards, and free ATM access.
+                        Насолоджуйтесь легким та зручним доступом до своїх коштів завдяки нашому асортименту розрахункових рахунків. Скористайтеся такими функціями, як онлайн- та мобільний банкінг, дебетові картки та безкоштовний доступ до банкоматів.
                     </p>
                 </div>
                 <div class="cell-sec border-down">
                     <div class="download">
                         <svg class="icon-download" width="100" height="100">
-                            <use href="/assets/sprite/sprite.svg#icon-download"></use>
+                            <use href="assets/sprite/sprite.svg#icon-download"></use>
                         </svg>
                     </div>
-                    <span class="fnt-wei-4">Savings Accounts</span>
+                    <span class="fnt-wei-4">Ощадні рахунки</span>
                     <p>
-                        Build your savings with our competitive interest rates and flexible savings 
-                        account options. Whether you're saving for a specific goal or want to grow 
-                        your wealth over time, we have the right account for you.
+                        Збільшуйте свої заощадження за допомогою наших конкурентних процентних ставок та гнучких варіантів ощадних рахунків. Незалежно від того, чи ви заощаджуєте для певної мети, чи хочете збільшити свій статок з часом, у нас є правильний рахунок для вас.
                     </p>
                 </div>
                 <div class="cell-sec border-down">
                     <div class="icon-money"></div>
-                    <span class="fnt-wei-4">Loans and Mortgages</span>
+                    <span class="fnt-wei-4">Кредити та іпотеки</span>
                     <p>
-                        Realize your dreams with our flexible loan and mortgage options. From 
-                        personal loans to home mortgages, our experienced loan officers are 
-                        here to guide you through the application process and help you secure 
-                        the funds you need.
+                        Здійсніть свої мрії з нашими гнучкими варіантами кредитування та іпотеки. Від особистих позик до іпотеки на житло, наші досвідчені кредитні спеціалісти тут, щоб допомогти вам пройти процес подання заявки та отримати необхідні кошти.
                     </p>
                 </div>
             </div>
@@ -120,8 +111,7 @@
             <div class="header-three">
                 <h1><span>Use Cases</span></h1>
                 <p>
-                    At YourBank, we cater to the diverse needs of individuals and businesses 
-                    alike, offering a wide range of financial solutions
+                    У YourBank ми задовольняємо різноманітні потреби як приватних осіб, так і бізнесу, пропонуючи широкий спектр фінансових рішень
                 </p>
             </div>
             <div class="grid-three pos-rel">
@@ -129,210 +119,176 @@
                     <img src="assets/images/three-section.png" alt="point's">
                     <div class="cell-three">
                         <div class="icon-watch"></div>
-                        <span>Managing Personal Finances</span>
+                        <span>Управління особистими фінансами</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-hand-dah"></div>
-                        <span>Saving for the Future</span>
+                        <span>Заощадження на майбутнє</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-house"></div>
-                        <span>Homeownership</span>
+                        <span>Володіння житлом</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-book"></div>
-                        <span>Education Funding</span>
+                        <span>Фінансування освіти</span>
                     </div>
                 </div>
                 <div class="text-digit ord-2">
                     <div class="text-three">
-                        <span>For Individuals</span>
+                        <span>Для фізичних осіб</span>
                         <p>
-                            For individuals, our mortgage services pave the way to homeownership, 
-                            and our flexible personal loans provide vital support during various 
-                            life milestones. We also prioritize retirement planning, ensuring a 
-                            financially secure future for our customers
+                            Для фізичних осіб наші іпотечні послуги відкривають шлях до власного житла, а наші гнучкі особисті позики забезпечують життєво важливу підтримку протягом різних життєвих етапів. Ми також надаємо пріоритет плануванню виходу на пенсію, забезпечуючи фінансово безпечне майбутнє для наших клієнтів
                         </p>
                     </div>
                     <div class="digit-three">
                         <div class="cell-digit-three">
                             <span>78%</span>
-                            <p>Secure Retirement Planning</p>
+                            <p>Безпечне планування виходу на пенсію</p>
                         </div>
                         <div class="cell-digit-three">
                             <span>63%</span>
-                            <p>Manageable Debt Consolidation</p>
+                            <p>Консолідація керованого боргу</p>
                         </div>
                         <div class="cell-digit-three">
                             <span>91%</span>
-                            <p>Reducing financial burdens</p>
+                            <p>Зменшення фінансового тягаря</p>
                         </div>
                     </div>
                     <div class="three-btn">
-                        <button>Learn More</button>
+                        <button>Дізнатися більше</button>
                     </div>
                 </div>
                 <div class="mini-tabl-three ord-3">
                     <img class="revers rev-img" src="assets/images/three-section.png" alt="point's">
                     <div class="cell-three">
                         <div class="icon-bighouse"></div>
-                        <span>Startups and Entrepreneurs</span>
+                        <span>Стартапи та підприємці</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-money"></div>
-                        <span>Cash Flow Management</span>
+                        <span>Управління грошовими потоками</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-LTE"></div>
-                        <span>Business Expansion</span>
+                        <span>Розширення бізнесу</span>
                     </div>
                     <div class="cell-three">
                         <div class="icon-coin"></div>
-                        <span>Payment Solutions</span>
+                        <span>Платіжні рішення</span>
                     </div>
                 </div>
                 <div class="text-digit ord-4">
                     <div class="text-three">
-                        <span>For Business</span>
+                        <span>Для бізнесу</span>
                         <p>
-                            For businesses, we empower growth with working capital solutions 
-                            that optimize cash flow, and our tailored financing options fuel 
-                            business expansion. Whatever your financial aspirations, YourBank 
-                            is committed to providing the right tools and support to achieve them
+                            Для бізнесу ми сприяємо зростанню за допомогою рішень щодо оборотного капіталу, які оптимізують грошовий потік, а наші індивідуальні варіанти фінансування стимулюють розширення бізнесу. Якими б не були ваші фінансові прагнення, YourBank прагне надати правильні інструменти та підтримку для їх досягнення
                         </p>
                     </div>
                     <div class="digit-three">
                         <div class="cell-digit-three">
                             <span>65%</span>
-                            <p>Cash Flow Management</p>
+                            <p>Управління грошовими потоками</p>
                         </div>
                         <div class="cell-digit-three">
                             <span>70%</span>
-                            <p>Drive Business Expansion</p>
+                            <p>Стимулювання розширення бізнесу</p>
                         </div>
                         <div class="cell-digit-three">
                             <span>45%</span>
-                            <p>Streamline payroll processing</p>
+                            <p>Оптимізуйте обробку заробітної плати</p>
                         </div>
                     </div>
                     <div class="three-btn">
-                        <button>Learn More</button>
+                        <button>Дізнатися більше</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="four-section">
             <div class="header-four">
-                <h1>Our <span>Features</span></h1>
+                <h1>Наш <span>Features</span></h1>
                 <p>
-                    Experience a host of powerful features at YourBank, including seamless online
-                    banking, secure transactions, and personalized financial insights, all 
-                    designed to enhance your banking experience
+                    Відчуйте безліч потужних функцій у YourBank, включаючи безперебійний онлайн-банкінг, безпечні транзакції та персоналізовану фінансову інформацію, всі розроблені для покращення вашого банківського досвіду
                 </p>
             </div>
             <div class="one-more-four">   
                 <div class="list-menu-four">
-                    <button class="unique">Online Banking</button>
-                    <button>Financial Tools</button>
-                    <button>Customer Support</button>
+                    <button class="unique">Онлайн-банкінг</button>
+                    <button>Фінансові інструменти</button>
+                    <button>Підтримка клієнтів</button>
                 </div>
                 <div class="grid-four">
                     <div class="cell-four">
                         <div class="jus-cont-spa-beet">
-                            <span class="fnt-wei-4">24/7 Account Access</span>
+                            <span class="fnt-wei-4">24/7 Доступ до облікового запису</span>
                             <div class="icon-arrow"></div>
                         </div>
-                        <p>Enjoy the convenience of accessing your accounts anytime, anywhere through 
-                            our secure online banking platform. Check balances, transfer funds, and 
-                            pay bills with ease.</p>
+                        <p>Насолоджуйтесь зручним доступом до своїх рахунків будь-коли та будь-де через нашу безпечну платформу онлайн-банкінгу. Перевіряйте баланс, переказуйте кошти та легко оплачуйте рахунки.</p>
                     </div>
                     <div class="cell-four">
                         <div class="jus-cont-spa-beet">
-                            <span class="fnt-wei-4">Mobile Banking App</span>
+                            <span class="fnt-wei-4">Мобільний банківський додаток</span>
                             <div class="icon-arrow"></div>
                         </div>
-                        <p>Stay connected to your finances on the go with our user-friendly mobile 
-                            banking app. Easily manage your accounts, deposit checks, and make payments 
-                            from your smartphone or tablet.</p>
+                        <p>Залишайтеся на зв'язку зі своїми фінансами в дорозі за допомогою нашого зручного мобільного банківського додатку. Легко керуйте своїми рахунками, вносьте чеки та здійснюйте платежі зі свого смартфона або планшета.</p>
                     </div>
                     <div class="cell-four">
                         <div class="jus-cont-spa-beet">
-                            <span class="fnt-wei-4">Secure Transactions</span>
+                            <span class="fnt-wei-4">Безпечні транзакції</span>
                             <div class="icon-arrow"></div>
                         </div>
-                        <p>Rest assured knowing that your transactions are protected by industry-leading 
-                            security measures. We employ encryption and multi-factor authentication to 
-                            safeguard your financial information.</p>
+                        <p>Будьте певні, що ваші транзакції захищені провідними в галузі заходами безпеки. Ми використовуємо шифрування та багатофакторну автентифікацію для захисту вашої фінансової інформації.</p>
                     </div>
                     <div class="cell-four">
                         <div class="jus-cont-spa-beet">
-                            <span class="fnt-wei-4">Bill Pay and Transfers</span>
+                            <span class="fnt-wei-4">Оплата рахунків та перекази</span>
                             <div class="icon-arrow"></div>
                         </div>
-                        <p>Save time and avoid late fees with our convenient bill pay service. Set up 
-                            recurring payments or make one-time transfers between your accounts with 
-                            just a few clicks.</p>
+                        <p>Заощадьте час і уникайте штрафів за прострочення платежу за допомогою нашого зручного сервісу оплати рахунків. Налаштуйте регулярні платежі або здійснюйте одноразові перекази між вашими рахунками за допомогою лише кількох кліків.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="five-section">
             <div class="header-five">
-                <h1><span>Frequently</span> Asked Questions</h1>
-                <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+                <h1><span>Часті </span>запитання</h1>
+                <p>У вас все ще є питання? Зверніться до нашої команди через support@yourbank.com</p>
             </div>
             <div class="grid-five">
                 <div class="cell-five">
-                    <span class="fnt-wei-4 fnt-sz-22">How do I open an account with YourBank?</span>
+                    <span class="fnt-wei-4 fnt-sz-22">Як відкрити рахунок у YourBank?</span>
                     <p>
-                        Opening an account with YourBank is easy. Simply visit our website 
-                        and click on the "Open an Account" button. Follow the prompts, 
-                        provide the required information, and complete the application 
-                        process. If you have any questions or need assistance, our 
-                        customer support team is available to help.
+                        Відкрити рахунок у YourBank легко. Просто відвідайте наш веб-сайт і натисніть кнопку «Відкрити рахунок». Дотримуйтесь підказок, надайте необхідну інформацію та завершіть процес подання заявки Якщо у вас є якісь запитання або вам потрібна допомога, наша служба підтримки клієнтів готова допомогти.
                     </p>
                 </div>
                 <div class="cell-five">
-                    <span class="fnt-wei-4 fnt-sz-22">What documents do I need to provide to apply for a loan?</span>
+                    <span class="fnt-wei-4 fnt-sz-22">Які документи мені потрібно надати, щоб подати заявку на отримання кредиту?</span>
                     <p>
-                        The documents required for a loan application may vary depending on the 
-                        type of loan you are applying for. Generally, you will need to provide 
-                        identification documents (such as a passport or driver's license), proof 
-                        of income (such as pay stubs or tax returns), and information about the 
-                        collateral (if applicable). Our loan officers will guide you through the 
-                        specific requirements during the application process.
+                        Документи, необхідні для подання заявки на кредит, можуть відрізнятися залежно від типу кредиту, на який ви претендуєте. Як правило, вам потрібно буде надати документи, що посвідчують особу (такі як паспорт або водійські права), підтвердження доходу (такі як платіжні квитанції або податкові декларації) та інформацію про забезпечення (якщо застосовується). Наші кредитні спеціалісти допоможуть вам ознайомитися з конкретними вимогами під час процесу подання заявки.
                     </p>
                 </div>
                 <div class="fade-2">
                     <div class="cell-five">
-                        <span class="fnt-wei-4 fnt-sz-22">How can I access my accounts online?</span>
+                        <span class="fnt-wei-4 fnt-sz-22">Як я можу отримати доступ до своїх облікових записів онлайн?</span>
                         <p>
-                            Accessing your accounts online is simple and secure. Visit our website 
-                            and click on the "Login" button. Enter your username and password to 
-                            access your accounts. If you haven't registered for online banking, 
-                            click on the "Enroll Now" button and follow the registration process. 
-                            If you need assistance, our customer support team is available to guide you.
+                            Доступ до ваших облікових записів онлайн простий та безпечний. Відвідайте наш веб-сайт та натисніть кнопку «Увійти». Введіть своє ім'я користувача та пароль, щоб отримати доступ до своїх облікових записів. Якщо ви ще не зареєстровані в онлайн-банкінгу, натисніть кнопку «Зареєструватися зараз» та виконайте процедуру реєстрації. Якщо вам потрібна допомога, наша служба підтримки клієнтів готова допомогти вам.
                         </p>
                     </div>
                 </div>
                 <div class="fade">
                     <div class="cell-five fade">
-                        <span class="fnt-wei-4 fnt-sz-22">Are my transactions and personal information secure?</span>
+                        <span class="fnt-wei-4 fnt-sz-22">Чи захищені мої транзакції та особиста інформація??</span>
                         <p>
-                            At YourBank, we prioritize the security of your transactions and 
-                            personal information. We employ industry-leading encryption and 
-                            multi-factor authentication to ensure that your data is protected. 
-                            Additionally, we regularly update our security measures to stay 
-                            ahead of emerging threats. You can bank with confidence knowing 
-                            that we have robust security systems in place.
+                            У YourBank ми надаємо пріоритет безпеці ваших транзакцій та особистої інформації. Ми використовуємо провідне в галузі шифрування та багатофакторну автентифікацію, щоб забезпечити захист ваших даних. Крім того, ми регулярно оновлюємо наші заходи безпеки, щоб бути на крок попереду нових загроз. Ви можете банківсько працювати з упевненістю, знаючи, що у нас діють надійні системи безпеки.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="five-btn">
-                <button>Load All FAQ’s
+                <button>Завантажити всі поширені запитання
                     <svg class="icon" width="13" height="8">
-                        <use href="/assets/sprite/sprite.svg#icon-mini-arrow"></use>
+                        <use href="assets/sprite/sprite.svg#icon-mini-arrow"></use>
                     </svg>
                 </button>
             </div>
@@ -340,23 +296,21 @@
         <div class="six-section">
             <div class="header-five">
                 <div class="five-part">
-                    <h1>Our <span>Testimonials</span></h1>
+                    <h1>Our <span>Відгуки</span></h1>
                     <p>
-                        Discover how YourBank has transformed lives with innovative digital 
-                        solutions and personalized customer service. See why our clients 
-                        trust us for a secure and prosperous financial journey
+                        Дізнайтеся, як YourBank змінив життя завдяки інноваційним цифровим рішенням та персоналізованому обслуговуванню клієнтів. Дізнайтеся, чому наші клієнти довіряють нам безпечну та успішну фінансову подорож
                     </p>
                 </div>
                 <div class="sec-btn">
-                    <button class="btn-on">For Individuals</button>
-                    <button class="btn-off">For Businesses</button>
+                    <button class="btn-on">Для фізичних осіб</button>
+                    <button class="btn-off">Для бізнесу</button>
                 </div>
             </div>
             <div class="six-section-part">
                 <div class="six-btn">
                     <button class="disp-none-left">
                         <svg class="icon" width="20" height="19">
-                            <use href="/assets/sprite/sprite.svg#icon-arrow-six"></use>
+                            <use href="assets/sprite/sprite.svg#icon-arrow-six"></use>
                         </svg>
                     </button>
                 </div>
@@ -366,31 +320,23 @@
                             <div class="cell-info-six ord-2">
                                 <div class="icon-horns"></div>
                                 <p>
-                                    I recently started my own business, and YourBank has been 
-                                    instrumental in helping me set up my business accounts and 
-                                    secure the financing I needed. Their expert guidance and 
-                                    tailored solutions have been invaluable.
+                                    Нещодавно я розпочав власний бізнес, і YourBank допоміг мені відкрити бізнес-рахунки та забезпечити необхідне фінансування. Їхні експертні консультації та індивідуальні рішення були безцінними.
                                 </p>
-                                <span class="fnt-wei-4">John D</span>
+                                <span class="fnt-wei-4">Джон Д.</span>
                             </div>
                             <div class="cell-info-six disp-none-1">
                                 <div class="icon-horns"></div>
                                 <p>
-                                    YourBank has been my trusted financial partner for years. 
-                                    Their personalized service and innovative digital banking 
-                                    solutions have made managing my finances a breeze.
+                                    YourBank є моїм надійним фінансовим партнером протягом багатьох років. Їхнє персоналізоване обслуговування та інноваційні рішення для цифрового банкінгу зробили управління моїми фінансами легким та простим..
                                 </p>
-                                <span class="fnt-wei-4">Sara T</span>
+                                <span class="fnt-wei-4">Сара Т.</span>
                             </div>
                             <div class="cell-info-six disp-none-2">
                                 <div class="icon-horns"></div>
                                 <p>
-                                    I love the convenience of YourBank's mobile banking app. 
-                                    It allows me to stay on top of my finances and make transactions 
-                                    on the go. The app is user-friendly and secure, giving me peace 
-                                    of mind.
+                                    Мені подобається зручність мобільного банківського додатку YourBank. Він дозволяє мені контролювати свої фінанси та здійснювати транзакції на ходу. Додаток зручний у використанні та безпечний, що дає мені спокій душі.
                                 </p>
-                                <span class="fnt-wei-4">Emily G</span>
+                                <span class="fnt-wei-4">Емілі Г.</span>
                             </div>
                         </div>
                     </div>
@@ -413,10 +359,9 @@
             <img src="assets/images/three-section.png" alt="point's">
             <div class="block-sev">
                 <div class="header-sev">
-                    <h1>Start your financial journey with <span>YourBank today!</span></h1>
+                    <h1>Почніть свою фінансову подорож з <span>ВашБанк сьогодні!</span></h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. 
-                        Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.
+                        Почніть свою фінансову подорож з YourBank сьогодні! Отримайте повний контроль над своїми грошима завдяки нашим інтуїтивно зрозумілим інструментам.
                     </p>
                 </div>
                 <div class="sev-btn">
@@ -446,13 +391,13 @@
                 </div>
                 <div class="group-2">
                     <svg class="icon" width="25" height="25">
-                        <use href="/assets/sprite/sprite.svg#icon-phone"></use>
+                        <use href="assets/sprite/sprite.svg#icon-phone"></use>
                     </svg>
                     <span>+91 91813 23 2309</span>
                 </div>
                 <div class="group-3">
                     <svg class="icon" width="25" height="25">
-                        <use href="/assets/sprite/sprite.svg#icon-location"></use>
+                        <use href="assets/sprite/sprite.svg#icon-location"></use>
                     </svg>
                     <span>Somewhere in the World</span>
                 </div>
@@ -463,17 +408,17 @@
                 <div class="icon-btn">
                     <button>
                         <svg class="icon" width="25" height="25">
-                            <use href="/assets/sprite/sprite.svg#icon-fb"></use>
+                            <use href="assets/sprite/sprite.svg#icon-fb"></use>
                         </svg>
                     </button>
                     <button>
                         <svg class="icon" width="25" height="25">
-                            <use href="/assets/sprite/sprite.svg#icon-twitter"></use>
+                            <use href="assets/sprite/sprite.svg#icon-twitter"></use>
                         </svg>
                     </button>
                     <button>
                         <svg class="icon" width="25" height="25">
-                            <use href="/assets/sprite/sprite.svg#icon-linkedin"></use>
+                            <use href="assets/sprite/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </button>
                 </div>
@@ -482,6 +427,7 @@
             </div>
         </div>
     </div>
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>

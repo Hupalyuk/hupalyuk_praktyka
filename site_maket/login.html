@@ -17,21 +17,32 @@
                 <span class="fnt-wei-4">YourBanK</span>
             </div>
             <div class="ref-nav-bar disp-none fnt-wei-4">
-                <a href="index.html" class="nt-active">Головна</a>
-                <a href="careers.html" class="active">Кар'єри</a>
-                <a href="about.html" class="nt-active">Про нас</a>
-                <a href="security.html" class="nt-active">Безпека</a>
+                <a href="index.html">Головна</a>
+                <a href="careers.html">Кар'єри</a>
+                <a href="about.html">Про нас</a>
+                <a href="security.html">Безпека</a>
             </div>
             <div class="right-group disp-none fnt-wei-4">
                 <a href="signUp.html">Реєстрація</a>
-                <a class="login" href="#">Вхід</a>
+                <a class="login" href="login.html">Вхід</a>
             </div>
-            <button class="btn-nav-bar">
-                <svg class="icon" width="25" height="25">
+            <button class="btn-nav-bar" id="burgerBtn">
+                <svg class="icon" width="25" height="25" id="burgerIcon">
                     <use href="assets/sprite/sprite.svg#btn-menu"></use>
                 </svg>
             </button>
         </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="index.html">Головна</a>
+                <a href="careers.html">Кар'єри</a>
+                <a href="about.html">Про нас</a>
+                <a href="security.html">Безпека</a>
+                <a href="signUp.html">Реєстрація</a>
+                <a class="login" href="login.html">Вхід</a>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
         <div class="login-sec-1">
             <picture><img class="log-pic-1" src="assets/images/security/security-sec-1-2.png" alt=""></picture>
             
@@ -203,5 +214,6 @@
             </div>
         </div>
     </div>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
