@@ -1,6 +1,4 @@
-// =========================
 // БУРГЕР
-// =========================
 const burgerBtn = document.getElementById("burgerBtn");
 const burgerIcon = document.getElementById("burgerIcon");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -29,10 +27,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
 });
 
-
-// =========================
 // КНОПКА ПРОКРУТКИ
-// =========================
 const scrollBtn = document.getElementById('scrollTopBtn');
 
 if (scrollBtn) {
@@ -51,10 +46,7 @@ if (scrollBtn) {
     });
 }
 
-
-// =========================
 // МОДАЛКА 1
-// =========================
 const openModal = document.getElementById("openModal");
 const modalOverlay = document.getElementById("modalOverlay");
 const closeModal = document.getElementById("closeModal");
@@ -72,10 +64,7 @@ if (openModal && modalOverlay && closeModal) {
     });
 }
 
-
-// =========================
 // МОДАЛКА 2
-// =========================
 const openModal2 = document.getElementById("openModal2");
 const modalOverlay2 = document.getElementById("modalOverlay2");
 const closeModal2 = document.getElementById("closeModal2");
@@ -93,10 +82,7 @@ if (openModal2 && modalOverlay2 && closeModal2) {
     });
 }
 
-
-// =========================
 // МОДАЛКИ "ЗВ'ЯЗОК"
-// =========================
 function setupModal(triggerSelector) {
     const triggers = document.querySelectorAll(triggerSelector);
 
@@ -122,13 +108,9 @@ function setupModal(triggerSelector) {
         });
     });
 }
-
 setupModal(".open-user-modal");
 
-
-// =========================
 // ФОРМА
-// =========================
 const userForm = document.getElementById("userForm");
 
 if (userForm) {
@@ -149,10 +131,7 @@ if (userForm) {
     });
 }
 
-
-// =========================
 // СВАЙПЕР
-// =========================
 const container = document.querySelector(".info-six");
 const btnRight = document.getElementById("btn-right");
 const btnLeft = document.getElementById("btn-left");
