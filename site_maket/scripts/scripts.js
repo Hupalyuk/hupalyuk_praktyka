@@ -181,3 +181,68 @@ if (swiperContainer) {
     });
 }
 
+// динамічний вивід елементів на сторінку
+const pressReleases = [
+    {
+        image: "assets/images/about-sec/about-sec-2-1.png",
+        title: "YourBank запускає нову програму винагород для підвищення лояльності та задоволеності клієнтів",
+        location: "Індія",
+        date: "06/11/2024",
+        text: `YourBank радий оголосити про запуск нашої нової Програми винагород,
+        спрямованої на винагородження наших постійних клієнтів та покращення їхнього 
+        банківського досвіду. Програма пропонує ексклюзивні переваги, знижки та 
+        персоналізовані пропозиції.`
+    },
+    {
+        image: "assets/images/about-sec/about-sec-2-2.png",
+        title: "YourBank розширює мережу відділень, відкривши нове відділення в Ченнаї",
+        location: "Індія",
+        date: "12/11/2024",
+        text: `YourBank радий оголосити про урочисте відкриття нашого нового відділення.
+        Це розширення підтверджує нашу відданість клієнтам та зручності доступу 
+        до банківських послуг.`
+    },
+    {
+        image: "assets/images/about-sec/about-sec-2-3.png",
+        title: "YourBank співпрацює з некомерційною організацією для підтримки фінансової освіти",
+        location: "Індія",
+        date: "24/12/2024",
+        text: `YourBank представляє Ініціативу сталого банкінгу, що включає зелені кредити,
+        екологічно чисті інвестиційні варіанти та безпаперові банківські рішення.`
+    },
+    {
+        image: "assets/images/about-sec/about-sec-2-4.png",
+        title: "YourBank запускає ініціативу сталого банкінгу для екологічної відповідальності",
+        location: "Індія",
+        date: "28/12/2024",
+        text: `Ініціатива «Сталий банкінг» демонструє нашу відданість екології — зелені кредити,
+        екологічні інвестиції та електронні рішення для більш зеленого майбутнього.`
+    }
+];
+
+// Контейнер
+const container_about_sec_2 = document.getElementById("pressContainer");
+
+// Цикл створення карток
+pressReleases.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("cell-about-sec-2");
+
+    card.innerHTML = `
+        <picture>
+            <img src="${item.image}" alt="${item.title}">
+        </picture>
+
+        <span>${item.title}</span>
+
+        <div class="info-p-group">
+            <p class="info-p">Розташування: ${item.location}</p>
+            <p class="info-p">Дата: ${item.date}</p>
+        </div>
+
+        <p>${item.text}</p>
+    `;
+
+    container_about_sec_2.appendChild(card);
+});
+
