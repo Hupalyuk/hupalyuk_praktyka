@@ -151,27 +151,33 @@ if (container) {
     });
 }
 
-const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
+// свайпер
+const swiperContainer = document.querySelector(".mySwiper");
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-        650: {
+if (swiperContainer) {
+    const swiper = new Swiper(".mySwiper", {
+        loop: true,
         slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
-        1000: {
-        slidesPerView: 2,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            650: {
+                slidesPerView: 1,
+            },
+            1000: {
+                slidesPerView: 2,
+            }
         }
-    }
-});
+    });
+}
+
