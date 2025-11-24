@@ -131,7 +131,7 @@ if (userForm) {
     });
 }
 
-// СВАЙПЕР
+// сям там
 const container = document.querySelector(".info-six");
 const btnRight = document.getElementById("btn-right");
 const btnLeft = document.getElementById("btn-left");
@@ -150,3 +150,28 @@ if (container) {
         container.insertBefore(container.lastElementChild, container.firstElementChild);
     });
 }
+
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        650: {
+        slidesPerView: 1,
+        },
+        1000: {
+        slidesPerView: 2,
+        }
+    }
+});

@@ -122,7 +122,7 @@ body {
 }
 
 .hero-seaction {
-    margin: 80px auto 0;
+    margin: 80px auto 60px;
 }
 
 .hero-btn a {
@@ -190,6 +190,21 @@ body {
 span.green-color {
     color: #c6ff00;
 }
+
+.swiper-wrapper img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    padding: 30px 20px;
+    color: #caff33;
+    border-radius: 14px;
+    background-color: #1c1c1c;
+}
+
+
+
 /* ------------------------------------------------ */
 
 /* second-section */
@@ -1832,8 +1847,14 @@ picture.about-pict img {
    .hero-seaction {
         width: 100%;
         max-width: 1440px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
    }
+
+    .swiper {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 
     .grid {
         margin: 0;
